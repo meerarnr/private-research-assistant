@@ -1,0 +1,282 @@
+{
+  "citation_enforced": {
+    "summary": {
+      "system": "citation_enforced",
+      "num_questions": 10,
+      "answer_rate": 0.8,
+      "citation_precision": 1.0,
+      "content_match_rate": 0.625
+    },
+    "per_question": [
+      {
+        "id": "q1",
+        "question": "What are the six knowledge areas in the BABOK Guide?",
+        "status": "REJECTED_NO_CITATION",
+        "answer": "The six knowledge areas in the BABOK Guide are:\n\n1. Business Analysis Planning and Monitoring\n2. Knowledge Area 2: Requirements Management\n3. Knowledge Area 3: Stakeholder Management\n4. Knowledge Area 4: Data Management\n5. Knowledge Area 5: Solution Quality Management\n6. Knowledge Area 6: Communication Management",
+        "cited_source_ids": [],
+        "expected_source_ids": [
+          "babok_business_analysis"
+        ],
+        "citation_hit": false,
+        "content_hit": false
+      },
+      {
+        "id": "q2",
+        "question": "What techniques are commonly used for requirements elicitation?",
+        "status": "OK",
+        "answer": "The context excerpts do not provide a comprehensive list of all techniques used for requirements elicitation, but they mention several approaches that can improve requirements quality:\n\n1. **Visualization**: Using tools that promote better understanding of the desired end-product, such as visualization and simulation. [source_id: babok_requirements_elicitation]\n2. **Consistent language**: Using simple, consistent definitions for requirements described in natural language and using business terminology prevalent in the enterprise. [source_id: babok_requirements_elicitation]\n3. **Guidelines**: Following organizational guidelines that describe collection techniques and types of requirements to be collected. [source_id: babok_requirements_elicitation]\n4. **Consistent use of templates**: Producing a consistent set of models and templates to document requirements. [source_id: babok_requirements_elicitation]\n5. **Documenting dependencies**: Documenting dependencies and interrelationships among requirements. [source_id: babok_requirements_elicitation]\n\nAdditionally, the context excerpts mention techniques used for business requirements analysis, such as:\n\n* Demonstration of prototypes\n* Joint working with stakeholders\n* Stakeholder workshops (facilitated or unstructured)\n* Translation into designing and building a working system\n\nHowever, these specific techniques are not explicitly listed as common methods for requirements elicitation in the context.",
+        "cited_source_ids": [
+          "babok_requirements_elicitation"
+        ],
+        "expected_source_ids": [
+          "babok_requirements_elicitation"
+        ],
+        "citation_hit": true,
+        "content_hit": true
+      },
+      {
+        "id": "q3",
+        "question": "What is the difference between a BRD and an FRD?",
+        "status": "REJECTED_NO_CITATION",
+        "answer": "There is no explicit information provided in the context excerpts about the difference between a Business Requirements Document (BRD) and a Functional Requirements Document (FRD). The context does provide information on business requirements, system requirements, and how they differ from each other.",
+        "cited_source_ids": [],
+        "expected_source_ids": [
+          "business_requirements_doc"
+        ],
+        "citation_hit": false,
+        "content_hit": false
+      },
+      {
+        "id": "q4",
+        "question": "What is a Requirements Traceability Matrix used for?",
+        "status": "OK",
+        "answer": "A Requirements Traceability Matrix is used to visualize the relationship between artifacts, specifically to map artifacts of one type (e.g., requirements) to artifacts of another type (e.g., source code), depicted in columns and rows. [source_id: requirements_traceability]",
+        "cited_source_ids": [
+          "requirements_traceability"
+        ],
+        "expected_source_ids": [
+          "requirements_traceability"
+        ],
+        "citation_hit": true,
+        "content_hit": true
+      },
+      {
+        "id": "q5",
+        "question": "How should a Postman collection be structured for API testing?",
+        "status": "OK",
+        "answer": "Postman Collections are based on the open source _collection format_. The collection format is portable and defines a structure for organizing API requests and modeling API workflows. According to [source_id: postman_collections_overview], collaborators can view a summary of a collection's purpose, recent activity, and related elements on the collection's **Overview** tab.\n\nIt is recommended that you learn more about this collection format by seeing [source_id: postman_collections_overview] and also [source_id: postman_using_collections].",
+        "cited_source_ids": [
+          "postman_collections_overview",
+          "postman_using_collections"
+        ],
+        "expected_source_ids": [
+          "postman_using_collections"
+        ],
+        "citation_hit": true,
+        "content_hit": false
+      },
+      {
+        "id": "q6",
+        "question": "How do you write a test script in Postman to validate an API response?",
+        "status": "OK",
+        "answer": "To write a test script in Postman to validate an API response, use the `pm.test` function and Chai.js BDD syntax. Provide a name and function that returns a boolean (`true` or `false`) value to indicate if the test passed or failed.\n\nExample:\n```\npm.test(\"response must be valid and have a body\", function () {\n     pm.response.to.be.ok;\n     pm.response.to.be.withBody;\n     pm.response.to.be.json;\n});\n```\n\n[source_id: postman_test_scripts]",
+        "cited_source_ids": [
+          "postman_test_scripts"
+        ],
+        "expected_source_ids": [
+          "postman_test_scripts"
+        ],
+        "citation_hit": true,
+        "content_hit": true
+      },
+      {
+        "id": "q7",
+        "question": "What is UAT and how does it differ from System Integration Testing?",
+        "status": "OK",
+        "answer": "User acceptance testing (UAT) is a process of verifying that a solution works for the user. It differs from system integration testing in that UAT tests that the user accepts the solution, whereas system integration testing ensures software does not crash and meets documented requirements.\n\n[source_id: acceptance_testing]",
+        "cited_source_ids": [
+          "acceptance_testing"
+        ],
+        "expected_source_ids": [
+          "acceptance_testing"
+        ],
+        "citation_hit": true,
+        "content_hit": false
+      },
+      {
+        "id": "q8",
+        "question": "What happens during Sprint Planning according to the Scrum Guide?",
+        "status": "OK",
+        "answer": "According to the Scrum Guide [source_id: scrum_guide], during Sprint Planning, the Product Owner proposes how the product could increase its value and utility in the current Sprint. The whole Scrum Team then collaborates to define a Sprint Goal that communicates why the Sprint is valuable to stakeholders.",
+        "cited_source_ids": [
+          "scrum_guide"
+        ],
+        "expected_source_ids": [
+          "scrum_guide"
+        ],
+        "citation_hit": true,
+        "content_hit": false
+      },
+      {
+        "id": "q9",
+        "question": "What is the role of a Product Owner in Scrum?",
+        "status": "OK",
+        "answer": "The Product Owner is accountable for maximizing the value of the product resulting from the work of the Scrum Team. [source_id: scrum_wikipedia]\nThey are also accountable for effective Product Backlog management, which includes:\n\n- Developing and explicitly communicating the Product Goal;\n- Creating and clearly communicating Product Backlog items;\n- Ordering Product Backlog items; \nand,\n\n- Ensuring that the Product Backlog is transparent, visible and understood. [source_id: scrum_guide]\n\nThe Product Owner represents the needs of many stakeholders in the Product Backlog and is a single person, not a committee.",
+        "cited_source_ids": [
+          "scrum_guide",
+          "scrum_wikipedia"
+        ],
+        "expected_source_ids": [
+          "scrum_guide"
+        ],
+        "citation_hit": true,
+        "content_hit": true
+      },
+      {
+        "id": "q10",
+        "question": "What is Retrieval-Augmented Generation and why is it used with LLMs?",
+        "status": "OK",
+        "answer": "Retrieval-augmented generation (RAG) is a method that enhances large language models (LLMs) by incorporating an information-retrieval mechanism, allowing models to access and utilize additional data beyond their original training set. [source_id: rag_wikipedia]\n\nAccording to IBM, RAG reduces the need for frequent model retraining, but it does not remove it entirely.[source_id: rag_wikipedia] \n\nRAG is used in applications where generated responses need to be grounded in external or frequently updated information.",
+        "cited_source_ids": [
+          "rag_wikipedia"
+        ],
+        "expected_source_ids": [
+          "rag_wikipedia"
+        ],
+        "citation_hit": true,
+        "content_hit": true
+      }
+    ]
+  },
+  "baseline": {
+    "summary": {
+      "system": "baseline",
+      "num_questions": 10,
+      "answer_rate": 1.0,
+      "citation_precision": 0.0,
+      "content_match_rate": 0.8
+    },
+    "per_question": [
+      {
+        "id": "q1",
+        "question": "What are the six knowledge areas in the BABOK Guide?",
+        "status": "OK",
+        "answer": "Based on the provided context excerpts, I can answer your question as follows:\n\nThe BABOK Guide is a framework used to guide business analysis. According to the BABOK Guide, there are six knowledge areas that are part of business analysis. However, the specific question about the six knowledge areas in the BABOK Guide was not directly addressed in the provided context excerpts.\n\nHowever, based on general knowledge, I can tell you that the six knowledge areas in the BABOK Guide are:\n\n1. **Enterprise Analysis**: This knowledge area involves identifying and addressing business needs, including understanding the organization's vision, mission, and overall strategy.\n2. **Business Requirements Management (BRM)**: This knowledge area is concerned with managing business requirements throughout the project lifecycle, from initial elicitation to post-implementation review.\n3. **Solution Evaluation**: This knowledge area involves evaluating potential solutions that meet the business requirements identified in the enterprise analysis phase.\n4. **Data Analysis**: This knowledge area focuses on analyzing and interpreting data related to the business problem or opportunity being addressed.\n5. **Business Rule Management**: This knowledge area is concerned with managing and governing business rules, including identifying, documenting, and implementing them throughout the project lifecycle.\n6. **Stakeholder Management**: This knowledge area involves understanding the needs of stakeholders, including customers, end-users, and other internal and external parties who are impacted by the analysis project.\n\nPlease note that this answer is based on general knowledge and not directly derived from the provided context excerpts.",
+        "cited_source_ids": [],
+        "expected_source_ids": [
+          "babok_business_analysis"
+        ],
+        "citation_hit": false,
+        "content_hit": false
+      },
+      {
+        "id": "q2",
+        "question": "What techniques are commonly used for requirements elicitation?",
+        "status": "OK",
+        "answer": "Based on the provided context excerpts, some common techniques used for requirements elicitation include:\n\n1. **Visualization**: Using tools that promote better understanding of the desired end-product, such as visualization and simulation.\n2. **Consistent language**: Using simple, consistent definitions for requirements described in natural language and using business terminology prevalent in the enterprise.\n3. **Guidelines**: Following organizational guidelines that describe collection techniques and types of requirements to be collected.\n4. **Consistent use of templates**: Producing a consistent set of models and templates to document requirements.\n5. **Documenting dependencies**: Documenting dependencies and interrelationships among requirements.\n\nAdditionally, other techniques mentioned in the context include:\n\n1. Joint working with stakeholders\n2. Stakeholder workshops (facilitated sessions or huddled discussions)\n3. Prototyping demonstrations\n\nThese techniques are aimed at improving requirements quality by promoting better understanding, consistency, and analysis of business requirements.",
+        "cited_source_ids": [],
+        "expected_source_ids": [
+          "babok_requirements_elicitation"
+        ],
+        "citation_hit": false,
+        "content_hit": true
+      },
+      {
+        "id": "q3",
+        "question": "What is the difference between a BRD and an FRD?",
+        "status": "OK",
+        "answer": "The provided context excerpts do not explicitly define what an FRD stands for, but they do describe the concept of Business Requirements Documents (BRDs) and Systems Requirements Specifications or Documents (SRS or SRD).\n\nBased on the information provided, it can be inferred that a BRD is a document that captures business requirements from stakeholders, while a SRS or SRD typically documents product, system, or software requirements. The primary difference between a BRD and an SRS/SRD is that BRDs focus on process or activity-related aspects of gathering requirements, whereas SRS/SRDs detail how to achieve those business objectives.\n\nThe text does not explicitly state the differences between a BRD and an FRD, but it implies that Business Requirements Documents (BRDs) capture business requirements, while Systems Requirements Specifications or Documents (SRS or SRD) document product, system, or software requirements.",
+        "cited_source_ids": [],
+        "expected_source_ids": [
+          "business_requirements_doc"
+        ],
+        "citation_hit": false,
+        "content_hit": false
+      },
+      {
+        "id": "q4",
+        "question": "What is a Requirements Traceability Matrix used for?",
+        "status": "OK",
+        "answer": "A Requirements Traceability Matrix (RTM) is used to visualize and manage relationships between artifacts, such as requirements, specification statements, designs, tests, models, and developed components. It is a table-like representation that maps artifacts of one type to artifacts of another type, highlighting traceability relationships.\n\nIn the context of the provided excerpts, an RTM is described as:\n\n\"...a table-like representation that maps artifacts of one type (e.g., requirements) depicted in columns to artifacts of another type (e.g., source code) depicted in rows. Cells visualize a trace between two artifacts if filled or a non-trace if left empty.\"\n\nThe primary purpose of an RTM is to provide a clear and concise visual representation of the relationships between different artifacts, making it easier to identify and manage requirements traceability.",
+        "cited_source_ids": [],
+        "expected_source_ids": [
+          "requirements_traceability"
+        ],
+        "citation_hit": false,
+        "content_hit": true
+      },
+      {
+        "id": "q5",
+        "question": "How should a Postman collection be structured for API testing?",
+        "status": "OK",
+        "answer": "A Postman collection can be structured in various ways, but the recommended approach is to use a combination of folders, environments, monitors, and mocks. \n\nAccording to the official Postman documentation, a well-structured collection typically follows this hierarchy:\n\n*   **Environments**: Create separate environments for different scenarios or settings that affect your API requests.\n*   **Monitors**: Use monitors to track changes in your APIs, such as rate limits, headers, or query parameters.\n*   **Mocks**: Set up mock servers within the collection to simulate API responses or provide a fallback when the original API is unavailable.\n*   **Folders**: Organize related tests and scripts within folders for easy navigation and understanding.\n\nBy structuring your Postman collection in this way, you can efficiently manage complex testing scenarios, make it easier to collaborate with others, and reduce the complexity of your test suite.\n\nHere's an example of what a basic structure might look like:\n```\nCollection Name\n    - Environment 1\n        • **Variables**\n            • API_KEY\n            • BASE_URL\n        • **Monitors**\n            • Rate Limit Monitor\n            • Header Monitor\n    - Environment 2\n        • **Variables**\n            • DIFFERENT_API_KEY\n            • DIFFERENT_BASE_URL\n        • **Mock Servers**\n            • Mock Server for different API endpoint\n    - Folders\n        • **Test Suite A**: Tests related to scenario A\n        • **Test Suite B**: Tests related to scenario B\n```\nThis structure allows you to easily switch between environments, view the current state of your monitors, and access mock servers. It also provides a clear organization for your tests within folders.\n\nBy following this structure, you can create more complex testing scenarios while keeping your Postman collection organized and easy to manage.",
+        "cited_source_ids": [],
+        "expected_source_ids": [
+          "postman_using_collections"
+        ],
+        "citation_hit": false,
+        "content_hit": true
+      },
+      {
+        "id": "q6",
+        "question": "How do you write a test script in Postman to validate an API response?",
+        "status": "OK",
+        "answer": "To write a test script in Postman to validate an API response, follow these steps:\n\n1. Send the request and get a response.\n2. Open the **Scripts > Post-response** tab.\n3. Click the `[![Refresh icon](https://assets.postman.com/postman-docs/aether-icons/action-refresh-stroke.svg#icon)](https://assets.postman.com/postman-docs/aether-icons/action-refresh-stroke.svg)` button in the upper right corner of the **Test Results** pane to refresh the results.\n4. Use a library like Chai.js BDD syntax and `pm.expect` in your assertions.\n\nHere's an example:\n```\npm.test(\"response must be valid and have a body\", function () {\n     pm.response.to.be.ok;\n     pm.response.to.be.withBody;\n     pm.response.to.be.json;\n});\n```\n\nThis script tests that the response is OK, has a body, and is in JSON format.",
+        "cited_source_ids": [],
+        "expected_source_ids": [
+          "postman_test_scripts"
+        ],
+        "citation_hit": false,
+        "content_hit": true
+      },
+      {
+        "id": "q7",
+        "question": "What is UAT and how does it differ from System Integration Testing?",
+        "status": "OK",
+        "answer": "User Acceptance Testing (UAT) is a type of acceptance testing that verifies the solution works for the user. It is not system testing, which ensures software does not crash and meets documented requirements.\n\nAccording to the provided context excerpts, UAT differs from system integration testing in its focus. System integration testing typically checks that software integrates with other systems, whereas UAT focuses on verifying that the solution works for the user, i.e., it tests that the user accepts the solution.\n\nIn contrast, UAT is conducted by the intended end-user or a subject-matter expert and involves real-life scenarios to ensure the system satisfies business requirements. It acts as a final verification of the required business functionality and proper functioning of the system, emulating real-world conditions on behalf of the paying client or specific large customer.\n\nWhile there might be some overlap between UAT and system integration testing, they are distinct concepts with different objectives. System integration testing is typically conducted earlier in the development process to ensure that individual components work together seamlessly, whereas UAT occurs towards the end of the project to verify that the solution meets user needs and requirements.",
+        "cited_source_ids": [],
+        "expected_source_ids": [
+          "acceptance_testing"
+        ],
+        "citation_hit": false,
+        "content_hit": true
+      },
+      {
+        "id": "q8",
+        "question": "What happens during Sprint Planning according to the Scrum Guide?",
+        "status": "OK",
+        "answer": "According to the provided context excerpts from the Scrum Guide, during Sprint Planning:\n\n1. The Product Owner proposes how the product could increase its value and utility in the current Sprint.\n2. The whole Scrum Team collaborates to define a Sprint Goal that communicates why the Sprint is valuable to stakeholders.\n3. The Developers select items from the Product Backlog to include in the current Sprint, refining them as needed during this process.\n4. The Sprint Goal, selected Product Backlog items, and plan for delivering them are together referred to as the Sprint Backlog.\n\nThese steps occur within a timeboxed event, typically lasting 8 hours for a one-month Sprint or shorter for shorter Sprints.",
+        "cited_source_ids": [],
+        "expected_source_ids": [
+          "scrum_guide"
+        ],
+        "citation_hit": false,
+        "content_hit": true
+      },
+      {
+        "id": "q9",
+        "question": "What is the role of a Product Owner in Scrum?",
+        "status": "OK",
+        "answer": "According to the provided context excerpts, the role of a Product Owner in Scrum includes:\n\n* Maximizing the value of the product resulting from the work of the Scrum Team\n* Managing the Product Backlog and ensuring it is transparent, visible, and understood\n* Developing and explicitly communicating the Product Goal\n* Creating and clearly communicating Product Backlog items\n* Ordering Product Backlog items\n\nThe Product Owner serves as a single person accountable for the Product Backlog and its decisions, rather than a committee. They represent the needs of many stakeholders in the Product Backlog and are responsible for delivering business results.\n\nIt is also mentioned that the Product Owner does not make decisions unilaterally, but rather may delegate responsibility to others or receive input from stakeholders who want to change the Product Backlog.",
+        "cited_source_ids": [],
+        "expected_source_ids": [
+          "scrum_guide"
+        ],
+        "citation_hit": false,
+        "content_hit": true
+      },
+      {
+        "id": "q10",
+        "question": "What is Retrieval-Augmented Generation and why is it used with LLMs?",
+        "status": "OK",
+        "answer": "Retrieval-augmented generation (RAG) is an approach that enhances large language models (LLMs) by incorporating an information-retrieval mechanism, allowing models to access and utilize additional data beyond their original training set. This approach provides the LLM with key information early in the prompt, encouraging it to prioritize the supplied data over pre-existing training knowledge.\n\nRAG is used with LLMs because it allows generated responses to be grounded in external or frequently updated information. In applications where high accuracy and reliability are required, RAG can provide a way to improve the grounding of generated outputs in external knowledge sources.",
+        "cited_source_ids": [],
+        "expected_source_ids": [
+          "rag_wikipedia"
+        ],
+        "citation_hit": false,
+        "content_hit": true
+      }
+    ]
+  }
+}

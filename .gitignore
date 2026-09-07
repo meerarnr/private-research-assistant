@@ -1,0 +1,10 @@
+venv/
+__pycache__/
+*.pyc
+.env
+.DS_Store
+qdrant_storage/
+
+# Bulk scraped third-party page text — regenerate via ingest.py. Kept out of git
+# to avoid redistributing full scraped pages verbatim.
+corpus.json

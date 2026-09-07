@@ -1,0 +1,62 @@
+[
+  {
+    "id": "q1",
+    "question": "What are the six knowledge areas in the BABOK Guide?",
+    "expected_source_ids": ["babok_business_analysis"],
+    "expected_answer_contains": ["elicitation", "requirements life cycle", "strategy analysis"]
+  },
+  {
+    "id": "q2",
+    "question": "What techniques are commonly used for requirements elicitation?",
+    "expected_source_ids": ["babok_requirements_elicitation"],
+    "expected_answer_contains": ["visualization", "guidelines"]
+  },
+  {
+    "id": "q3",
+    "question": "What is the difference between a BRD and an FRD?",
+    "expected_source_ids": ["business_requirements_doc"],
+    "expected_answer_contains": ["business requirements", "functional"]
+  },
+  {
+    "id": "q4",
+    "question": "What is a Requirements Traceability Matrix used for?",
+    "expected_source_ids": ["requirements_traceability"],
+    "expected_answer_contains": ["trace", "requirements"]
+  },
+  {
+    "id": "q5",
+    "question": "How should a Postman collection be structured for API testing?",
+    "expected_source_ids": ["postman_using_collections"],
+    "expected_answer_contains": ["folder", "request", "collection"]
+  },
+  {
+    "id": "q6",
+    "question": "How do you write a test script in Postman to validate an API response?",
+    "expected_source_ids": ["postman_test_scripts"],
+    "expected_answer_contains": ["pm.test", "response"]
+  },
+  {
+    "id": "q7",
+    "question": "What is UAT and how does it differ from System Integration Testing?",
+    "expected_source_ids": ["acceptance_testing"],
+    "expected_answer_contains": ["user acceptance", "business"]
+  },
+  {
+    "id": "q8",
+    "question": "What happens during Sprint Planning according to the Scrum Guide?",
+    "expected_source_ids": ["scrum_guide"],
+    "expected_answer_contains": ["sprint goal", "product backlog"]
+  },
+  {
+    "id": "q9",
+    "question": "What is the role of a Product Owner in Scrum?",
+    "expected_source_ids": ["scrum_guide"],
+    "expected_answer_contains": ["product backlog", "value"]
+  },
+  {
+    "id": "q10",
+    "question": "What is Retrieval-Augmented Generation and why is it used with LLMs?",
+    "expected_source_ids": ["rag_wikipedia"],
+    "expected_answer_contains": ["retrieval", "training set"]
+  }
+]
